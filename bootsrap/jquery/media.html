@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="hai">click here </button>
+    <div  style="background-color: rebeccapurple;width: 400px;height: 300px;" id="fun"></div>
+   
+   
+    <input type="text" id="inp">
+    <label style="display: none; color: red;" for="" id="error">enter minimum 4 numbers</label>
+    <script>
+        $(document).ready (function(){
+            $("#hai").click(function(){
+                alert(" you are being hacked  !");
+            })
+
+            $("#hai"). mouseenter(function(){
+                $(this).css({"background-color":"red"});
+                $("#hai").mouseleave(function(){
+                    $(this).css({"background-color":"green"});
+
+
+                })
+            })
+            // $("#fun").fadeToggle(3000);
+            $("#inp").blur (function(){
+                var text=$(this).val();
+                if (text.length<4){
+                //  alert("enter minimum charecters ");
+                    $("#error").show()
+                }else{
+                    $("#error").hide()
+                }
+            })
+ 
+            
+          
+        })
+    
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</html>

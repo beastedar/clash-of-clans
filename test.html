@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changes()">click here </button>
+    <div class="hai">
+        <h1>hai how are you </h1>
+    </div>
+    <h2 id="cat">collopus crutus</h2>
+
+    <script>
+        function changes(){
+            console.log("button is clicked ")
+            
+
+            var a=1;
+            var b=2;
+            var b=3;// overrided the value of b 
+            var sum= a+b;
+           
+            let c=2;
+            var i;
+
+             
+               console.log("sum is "+sum)
+               var arr=["hai","hello","hesolitica",399]
+
+               console.log(arr);
+
+               var sample =[
+                {
+                    name:"ajay ",
+                    place:"malapuram",
+                    profession:"developper",
+
+
+                },{
+                    name:"locket",
+                    place:"uganda",
+                    profession:"nothing",
+                }
+               ]
+               console.log(sample)
+               console.log(sample[1].name);
+
+         
+          
+        }
+        document.getElementsByClassName("hai")[0].innerHTML = "hello ";
+        document.getElementById("cat").innerHTML = "duos"
+        // need to show the postion its creates a node list automatically 
+    </script>
+</body>
+</html>
